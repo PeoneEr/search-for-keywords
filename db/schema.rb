@@ -17,9 +17,10 @@ ActiveRecord::Schema.define(version: 20141107043915) do
   enable_extension "plpgsql"
 
   create_table "finders", force: true do |t|
-    t.string   "title"
-    t.string   "source"
     t.boolean  "modified"
+    t.integer  "uid"
+    t.string   "content"
+    t.string   "source"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
