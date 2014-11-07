@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 20141107043915) do
 
   create_table "finders", force: true do |t|
     t.boolean  "modified"
-    t.integer  "uid"
+    t.integer  "uid",        limit: 8
     t.string   "content"
     t.string   "source"
     t.datetime "created_at"
